@@ -53,12 +53,12 @@ internal class Program
                 options.DocExpansion(DocExpansion.List);
                 options.DefaultModelExpandDepth(0);
             });
-            //app.UseCors("allowAll");
+            app.UseCors("allowAll");
         }
         app.UseHttpsRedirection();
         app.UseStaticFiles();
 
-        app.MapGet("/", () => Results.File("./html-test-page.html, text/html"));
+        app.MapGet("/", () => Results.File("./wwwroot/html-test-page.html, text/html"));
         app.MapBookEndPoints();
 
         app.Run();

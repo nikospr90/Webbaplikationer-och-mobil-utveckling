@@ -20,7 +20,7 @@ namespace DemoControlerAPI.Endpoints
                 .WithTags(_tag)
                 .Produces<Book>(StatusCodes.Status200OK);
 
-            app.MapGet($"{ _route}/{{id}} ", GetBookById)
+            app.MapGet($"{_route}/{{id}}", GetBookById)
                 .WithSummary("Gets book by Id")
                 .WithDescription("Specific book search through it's Id")
                 .WithTags(_tag)
