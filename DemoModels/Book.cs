@@ -8,7 +8,7 @@ public record Book
     public string? Review { get; set; }
     public string? Description { get; set; }
     public string? ISBN { get; set; }
-    public int Rating { get; set; }
+    //public int Rating { get; set; }
 
     public static List<Book> GetSampleData()
     {

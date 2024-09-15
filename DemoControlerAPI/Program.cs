@@ -30,7 +30,7 @@ internal class Program
                 }   
             });
         });
-        //builder.Services.AddSingleton<IBookService, BookService>();
+        builder.Services.AddSingleton<IBookService, BookService>();
         builder.Services.AddDbContext<DataContext>();
         builder.Services.AddValidatorsFromAssemblyContaining<BookValidator>();
 
